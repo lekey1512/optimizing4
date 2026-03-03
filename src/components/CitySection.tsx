@@ -133,7 +133,7 @@ export default function CitySection({ id, cityLabel, cityName, cityNameItalic, c
       return `
         <div class="model-card">
           <div class="card-img-wrap">
-            ${model.image ? `<img src="${model.image}" alt="${model.name}" class="card-img" />` : `<div class="card-img-placeholder">${String(index + 1).padStart(2, '0')}</div>`}
+            ${model.image ? `<img src="${model.image}" alt="${model.name}" class="card-img" loading="lazy" decoding="async" width="214" height="280" />` : `<div class="card-img-placeholder">${String(index + 1).padStart(2, '0')}</div>`}
             ${rank > 0 ? `<div class="badge-rank ${rankClass}">${rank}</div>` : ''}
             ${model.vip ? '<div class="badge-vip">VIP</div>' : ''}
             <div class="card-gradient"></div>

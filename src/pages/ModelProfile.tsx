@@ -1139,6 +1139,10 @@ export default function ModelProfile() {
                     <img
                       src={image}
                       alt={`${model.name} - Photo ${index + 1}`}
+                      loading={index === 0 ? 'eager' : 'lazy'}
+                      decoding="async"
+                      width="380"
+                      height="540"
                       style={{
                         width: '100%',
                         height: '100%',
@@ -1271,6 +1275,10 @@ export default function ModelProfile() {
                   <img
                     src={otherModel.gallery[0]}
                     alt={otherModel.name}
+                    loading="lazy"
+                    decoding="async"
+                    width="300"
+                    height="400"
                     style={{
                       width: '100%',
                       height: '100%',

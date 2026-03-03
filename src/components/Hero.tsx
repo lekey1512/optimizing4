@@ -71,7 +71,7 @@ export default function Hero() {
 
       <section className="hero">
         <div className="hero-video-wrap">
-          <video autoPlay muted loop playsInline poster="https://images.pexels.com/photos/3171815/pexels-photo-3171815.jpeg?auto=compress&cs=tinysrgb&w=1920">
+          <video autoPlay muted loop playsInline preload="none" poster="https://images.pexels.com/photos/3171815/pexels-photo-3171815.jpeg?auto=compress&cs=tinysrgb&w=1920&fit=crop&h=1080">
             <source src="https://res.cloudinary.com/dechikoa8/video/upload/v1772459273/background-video_ch132l.mp4" type="video/mp4" />
           </video>
         </div>
